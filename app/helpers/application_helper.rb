@@ -29,5 +29,9 @@ module ApplicationHelper
     flash_messages.join("\n").html_safe
   end
   
+  def tenant_name(tenant_id)
+    Tenant.find(tenant_id).name
+  end
+  
   
 end
